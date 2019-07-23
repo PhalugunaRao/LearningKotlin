@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/tv_click_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:padding="20sp"
+                android:text="CLICK FIRST"/>
+    <TextView
+            android:id="@+id/tvJustified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="20sp"
+            android:justificationMode="inter_word"
+            android:text="The text in this TextView is justified. This feature is introduced in Android version >= 8.0. The text in this TextView is justified. This feature is introduced in Android version >= 8.0.The text in this TextView is justified. This feature is introduced in Android version >= 8.0." />
+
+    </LinearLayout>
