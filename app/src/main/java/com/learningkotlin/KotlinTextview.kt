@@ -23,6 +23,9 @@ class KotlinTextview:AppCompatActivity() {
         //second method get reference of textview
 
         val tv_click_me = findViewById<TextView>(R.id.tv_click_me)
+
+
+
         tv_click_me.isAllCaps=false
         tv_click_me.setOnClickListener {
             Toast.makeText(this,"TEST TOAST",Toast.LENGTH_LONG).show()
