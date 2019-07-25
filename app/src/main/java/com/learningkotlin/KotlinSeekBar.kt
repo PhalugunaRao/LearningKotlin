@@ -12,6 +12,10 @@ class KotlinSeekBar :AppCompatActivity(),SeekBar.OnSeekBarChangeListener {
     private var seekbarStatusView: TextView?=null
     private var seekbarView:SeekBar?=null
 
+    var MIN =10
+    var MAX =160
+    var STEP =5
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.kotlin_seekbar)
@@ -19,10 +23,12 @@ class KotlinSeekBar :AppCompatActivity(),SeekBar.OnSeekBarChangeListener {
         progressView = this.progress
         seekbarStatusView = this.seekbarStatus
         seekbarView = this.seekbar
+        seekbarView!!.max =(MAX-MIN)/STEP
         seekbarView!!.setOnSeekBarChangeListener(this)
     }
     override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-        progressView!!.text = progress.toString()
+        val progress_custom = MIN+(progress*STEP)
+        progressView!!.text = progress_custom.toString()
         seekbarStatusView!!.text = "Tracking Touch"
     }
     override fun onStartTrackingTouch(seekBar: SeekBar?) {
