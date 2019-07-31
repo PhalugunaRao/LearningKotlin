@@ -22,6 +22,7 @@
         <activity android:name=".recycle.KotlinRecycleViewActivity"></activity>
         <activity android:name=".KotlinImageSlider"></activity>
         <activity android:name=".tab.KotlinTabActivity"></activity>
+        <activity android:name=".databinds.DemoBindActivity"></activity>
     </application>
 
 </manifest>

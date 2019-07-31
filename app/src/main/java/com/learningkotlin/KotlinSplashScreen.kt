@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
-import com.learningkotlin.tab.KotlinTabActivity
+import com.learningkotlin.databinds.DemoBindActivity
 
 class KotlinSplashScreen:AppCompatActivity() {
     private val SPLASH_DISPLAY_LENGTH = 2000
@@ -13,7 +13,7 @@ class KotlinSplashScreen:AppCompatActivity() {
         setContentView(R.layout.kotlin_splash_screen)
 
         Handler().postDelayed({
-            val mainIntent = Intent(this, KotlinTabActivity::class.java)
+            val mainIntent = Intent(this, DemoBindActivity::class.java)
             startActivity(mainIntent)
             finish()
         },SPLASH_DISPLAY_LENGTH.toLong())
