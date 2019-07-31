@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.learningkotlin">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
             android:allowBackup="true"
@@ -23,6 +26,7 @@
         <activity android:name=".KotlinImageSlider"></activity>
         <activity android:name=".tab.KotlinTabActivity"></activity>
         <activity android:name=".databinds.DemoBindActivity"></activity>
+        <activity android:name=".CallActivity"></activity>
     </application>
 
 </manifest>
